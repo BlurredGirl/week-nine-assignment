@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/myprofile/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/myprofile/[id]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,15 +11,30 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/posts/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/posts/page.js"
+      "static/chunks/app/page.js"
     ],
     "/sign-in/[[...sign-in]]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/sign-in/[[...sign-in]]/page.js"
+    ],
+    "/sign-up/[[...sign-up]]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sign-up/[[...sign-up]]/page.js"
+    ],
+    "/posts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/posts/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

@@ -3,6 +3,7 @@ import './globals.css';
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
+import ProfileForm from "./components/ProfileForm";
 
 export default async function RootLayout({ children }) {
   const { userId } = auth();
@@ -10,7 +11,6 @@ export default async function RootLayout({ children }) {
 const profiles = await db.query(
     `SELECT * FROM profiles WHERE clerk_id = '${userId}'`
   );
-console.log(profiles);
 
 
   // if the user is logged in AND they don't have an entry in the profiles table, add it
@@ -18,6 +18,8 @@ console.log(profiles);
     // add user to database
     await db.query(`INSERT INTO profiles (clerk_id) VALUES ('${userId}')`);
   }
+
+  const hasUsername = profiles.rows[0]?.username !== null ? true : false;
 
 
   return (
@@ -32,12 +34,19 @@ console.log(profiles);
               <UserButton />
             </SignedIn>
           <nav className="navbar">
-            <Link href="/">H O M E</Link>
-            <Link href="/posts">M E O W S</Link>
+            <Link href="/">HOME</Link>
+            <Link href="/posts">ALL MEOWS</Link>
+            <Link href="/myprofile/id">MY PURROFILE</Link>
           </nav>
         </header>
           <main>
-            {children}
+          <SignedOut>{children}</SignedOut>
+
+            <SignedIn>
+              {hasUsername && children}
+              {!hasUsername && <ProfileForm />}
+            </SignedIn>
+
           </main>
           <footer>
           <h2>Week Nine Assignment</h2>
@@ -45,5 +54,5 @@ console.log(profiles);
         </body>
       </html>
     </ClerkProvider>
-  )
+  );
 }

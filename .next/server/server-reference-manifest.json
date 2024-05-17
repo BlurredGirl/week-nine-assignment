@@ -1,8 +1,34 @@
 {
   "node": {
+    "a25d14d42f154f7f1308536e7c880b70c5db784e": {
+      "workers": {
+        "app/myprofile/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fmyprofile%2F%5Bid%5D%2Fpage.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/myprofile/[id]/page": "rsc"
+      }
+    },
+    "ae1b05e50bd8e0160ee67ae9a375a92a9ee47828": {
+      "workers": {
+        "app/myprofile/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fmyprofile%2F%5Bid%5D%2Fpage.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!",
+        "app/_not-found/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!",
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!",
+        "app/sign-in/[[...sign-in]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!",
+        "app/sign-up/[[...sign-up]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!",
+        "app/posts/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fposts%2Fpage.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/myprofile/[id]/page": "rsc",
+        "app/_not-found/page": "rsc",
+        "app/page": "rsc",
+        "app/sign-in/[[...sign-in]]/page": "rsc",
+        "app/sign-up/[[...sign-up]]/page": "rsc",
+        "app/posts/page": "rsc"
+      }
+    },
     "9224399531dbe4a988ae3cb394c209a189f4bfdf": {
       "workers": {
-        "app/posts/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fposts%2Fpage.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+        "app/posts/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fposts%2Fpage.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FUsers%2Fcinem%2Fprojects%2Fweek-nine-assignment%2Fsrc%2Fapp%2Fcomponents%2FProfileForm.jsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/posts/page": "rsc"
@@ -10,5 +36,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "QZkVKiO2oWMTednNOHS2hNWCvSlslChYnwUg67UwhJY="
+  "encryptionKey": "3dT7OaVJq82e4BwjlH6E1Fm/tWjhmbqiWrQCXspwKew="
 }

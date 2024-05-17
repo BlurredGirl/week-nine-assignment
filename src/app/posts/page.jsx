@@ -56,7 +56,7 @@ export default async function Posts() {
         {posts.rows.map((post) => {
           return (
             <div key={post.id} className="post">
-              <h4>{post.username} meows...</h4>
+              <h5>{post.username} meows...</h5>
               <p>{post.content}</p>
             </div>
           );
