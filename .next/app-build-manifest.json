@@ -1,10 +1,5 @@
 {
   "pages": {
-    "/myprofile/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/myprofile/[id]/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -29,6 +24,7 @@
     "/posts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/posts/page.css",
       "static/chunks/app/posts/page.js"
     ],
     "/not-found": [
@@ -40,6 +36,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
+    ],
+    "/myprofile/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/myprofile/page.css",
+      "static/chunks/app/myprofile/page.js"
     ]
   }
 }

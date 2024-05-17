@@ -36,7 +36,7 @@ const profiles = await db.query(
           <nav className="navbar">
             <Link href="/">HOME</Link>
             <Link href="/posts">ALL MEOWS</Link>
-            <Link href="/myprofile/id">MY PURROFILE</Link>
+            <Link href="/myprofile">MY PURROFILE</Link>
           </nav>
         </header>
           <main>

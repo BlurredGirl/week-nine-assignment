@@ -1,6 +1,9 @@
 import { db } from "@/lib/db";
 import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
+import ToastButton from "../components/Toast";
+import { revalidatePath } from "next/cache";
+import { notFound } from "next/navigation";
 
 export default async function Posts() {
   // get the userId from clerk
@@ -29,8 +32,9 @@ export default async function Posts() {
 
     // add the new post to the database
     await db.query(
-      `INSERT INTO posts (profile_id, content) VALUES (${profileId}, '${content}')`
+      `INSERT INTO posts (profile_id, content) VALUES ($1, $2)`, [profileId, content]
     );
+    revalidatePath("/");
   }
 
   return (
@@ -41,7 +45,7 @@ export default async function Posts() {
         <h3>Add a meow...</h3>
         <form action={handleAddPost}>
           <textarea name="content" placeholder="What ails you little cat?"></textarea>
-          <button>Mrrrp...tap</button>
+<ToastButton/>
         </form>
         </div>
       </SignedIn>
@@ -65,3 +69,4 @@ export default async function Posts() {
     </div>
   );
 }
+

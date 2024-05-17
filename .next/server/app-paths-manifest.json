@@ -1,7 +1,8 @@
 {
-  "/myprofile/[id]/page": "app/myprofile/[id]/page.js",
-  "/sign-in/[[...sign-in]]/page": "app/sign-in/[[...sign-in]]/page.js",
   "/page": "app/page.js",
+  "/sign-in/[[...sign-in]]/page": "app/sign-in/[[...sign-in]]/page.js",
   "/sign-up/[[...sign-up]]/page": "app/sign-up/[[...sign-up]]/page.js",
-  "/posts/page": "app/posts/page.js"
+  "/posts/page": "app/posts/page.js",
+  "/myprofile/page": "app/myprofile/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

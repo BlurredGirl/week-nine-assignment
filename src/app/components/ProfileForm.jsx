@@ -17,16 +17,19 @@ export default function ProfileForm() {
 
   return (
     <div>
-      <h2>Update Purrfile</h2>
+      <h2>Update Purrofile</h2>
       <p>
-        Welcome to MeowSpace, purrlease choose a username & complete your bio to
-        continue...
+        <h3>Welcome to MeowSpace, purrlease choose a username & complete your bio to
+        continue...</h3>
       </p>
-      <form action={handleUpdateProfile}>
+      <form className="profileform" action={handleUpdateProfile}>
         <input name="username" placeholder="Username" />
         <input name="bio" placeholder="Bio" />
         <button>Mrrrp...tap</button>
       </form>
+      <div className="homepage">
+      <img src="https://trello.com/1/cards/66462821ccdd2630942a96a8/attachments/6646282c7b9b69c096872d06/previews/6646282c7b9b69c096873523/download/Designer.jpg" alt="meowspace"></img>
+    </div>
     </div>
   );
 }
