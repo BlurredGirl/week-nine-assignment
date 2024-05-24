@@ -34,4 +34,4 @@ Describing errors or bugs you encountered while completing your assignment.
 - During testing, I set up the 404 error using not-found and it was working (and does work if you type an incorrect page link, like /postss (not /posts), however when first signing up it was sometimes throwing the standard error page for next.js
 
 Requesting feedback about a specific part of your submission.
-- Just general feedback please.
+- Just general feedback please :)
